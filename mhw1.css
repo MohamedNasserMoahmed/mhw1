@@ -1,0 +1,233 @@
+
+body{
+margin: 0;
+font-family: "Roboto condensed",Arial, sans-serif;
+}
+/* Inizio NavBar */
+.links{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    display: flex;
+    margin: 15px 10px;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.links a{
+    background-color: #eee;
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 20px;
+    padding: 5px 0;
+    width: calc((98% - 20px)/ 7);
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+/* Fine NavBar */
+
+/* +++++++++++++++++++++++++++++ */
+
+/* Inizio Header */
+
+header{
+    height: 500px;
+    background-image: url("/mhw1/sfondo.png.webp");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 10px;
+}
+#overlay{
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    height: 100% ;
+    width: 100%;
+    /* position: relative; */
+}
+h1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    margin: 0 0;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    bottom: 50%; 
+   } 
+
+/* La Parte Dei Contenuti */
+section {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 66.67%;
+    margin: 0 auto;
+    /* z-index: 0; */
+    /* margin: 75px 100px; */   
+} 
+
+/* No-one photo */
+.profile-photo{
+    position: relative;
+    height: 150px;
+    width: 100%;
+}
+.profile-photo img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 50%;
+    border-radius: 50px; 
+ }
+
+.profile-photo h5{
+    position: absolute;
+    margin: 60px 0 60px 0;
+    margin-left: calc(50% - 70px);
+    font-style: italic;
+} 
+/* Fine No-one photo */
+/* Inizio Footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+} 
+.info-page{
+    color: #eee;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.info-pers{
+    display: flex;
+    justify-content: center;
+}
+.info-pers div{
+    color: #eee;
+    background-color: black;
+    margin-bottom: 0;
+    font-size: 30px;
+    padding: 30px 50px;
+}
+/* Fine Footer */
+
+/* *******BLOCKS******* */
+
+/* Inizio Section Part */
+:root{
+    --left-margin: 40px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;   
+}
+#left-marg{
+    margin-left: var(--left-margin);
+}
+p{
+    margin: 20px 0 0 83px;
+    font-size: 26px;
+    line-height: 50px;
+}
+h5{
+    margin: 20px 83px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.voto{
+    margin: 0 0 20px 83px;
+    color: rgb(7, 194, 194);
+    font-size: 28px;
+    font-weight: 900;
+}
+.flex-container img{
+    margin-left: 83px;
+    width: calc(100% - 83px);
+    margin-bottom: 120px;
+}
+ul{
+    margin-left: 100px;
+    font-size: 26px;
+
+}
+#number, #left-marg{
+    font-size: 50px;
+    font-weight: 900;
+
+}
+#number{
+    color: rgb(0, 0, 0, 0.3);
+}
+/* Fine Section Part */
+
+/* @media Queries */
+
+@media (max-width: 380px){
+    body {
+    font-size: 14px;
+    width: 97vh;
+    }
+    section{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .flex-container img{
+        width: 100vh ;
+       margin-right: 10px;
+        height: auto;
+    }
+    header{
+        width: 100vh;
+    }
+    .links{
+        justify-content: center;
+    }
+    .info-pers div{
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 500px){
+    body {
+    font-size: 14px;
+    width: 97vh;
+    padding-right: 0;
+    }
+    section{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .flex-container img{
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        height: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+    body {
+    font-size: 20px;
+    width: 100vh;
+    }
+    section{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .flex-container img{
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        height: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
